@@ -1,14 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package task3;
 
-/**
- *
- * @author User
- */
-public class Plant {
-    
+public interface Plant {
+    public abstract void growPlant();
+    public abstract String getStem();
+    public abstract boolean hasLeaves();
+    public abstract String getColor();
+    public abstract void setStem(String stem);
+    public abstract void setHasLeaves(boolean leaves);
+    public abstract void setColor(String color);
+   
 }

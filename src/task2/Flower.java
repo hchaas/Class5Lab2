@@ -11,10 +11,6 @@ public abstract class Flower extends Plant{
         else{
             this.petalSize = petalSize;
         }
-    }
     
-    @Override
-    public void growPlant(){
-        System.out.println("Plant grew 2 inches.");
     }
 }

@@ -6,9 +6,7 @@ public abstract class Plant {
     private boolean leaves;
     private String color;
     
-    public void growPlant(){
-        
-    }
+    public abstract void growPlant();
     
     public String getStem() {
         return stem;
