@@ -1,14 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package task2;
 
-/**
- *
- * @author User
- */
-public class Flower {
+public abstract class Flower extends Plant{
+        private String petalSize;
     
+    public void setPetalSize(String petalSize){
+        if (petalSize == null || petalSize.isEmpty()){
+            throw new IllegalArgumentException("Invalid input.");
+        }
+        else{
+            this.petalSize = petalSize;
+        }
+    }
+    
+    @Override
+    public void growPlant(){
+        System.out.println("Plant grew 2 inches.");
+    }
 }

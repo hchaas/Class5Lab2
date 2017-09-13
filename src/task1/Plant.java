@@ -6,13 +6,11 @@ public class Plant {
     private String stem;
     private boolean leaves;
     private String color;
-
-    public Plant(String stem, boolean leaves, String color) {
-        setStem(stem);
-        setHasLeaves(leaves);
-        setColor(color);
+    
+    public void growPlant(){
+        System.out.println("Grew 1 inch.");
     }
-
+    
     public String getStem() {
         return stem;
     }
