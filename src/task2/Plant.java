@@ -2,30 +2,30 @@
 package task2;
 
 public abstract class Plant {
-    private String stem;
-    private boolean leaves;
-    private String color;
+    private String stemWidth;
+    private boolean hasLeaves;
+    private String plantColor;
     
     public abstract void growPlant();
     
-    public String getStem() {
-        return stem;
+    public String getStemWidth() {
+        return stemWidth;
     }
 
     public boolean hasLeaves() {
-        return leaves;
+        return hasLeaves;
     }
 
-    public String getColor() {
-        return color;
+    public String getPlantColor() {
+        return plantColor;
     }
 
-    public void setStem(String stem) {
+    public void setStemWidth(String stem) {
         if (stem == null || stem.isEmpty()){
             throw new IllegalArgumentException("Invalid input.");
         }
         else{
-            this.stem = stem;
+            this.stemWidth = stem;
         }
         
     }
@@ -34,12 +34,12 @@ public abstract class Plant {
         leaves = true;
     }
 
-    public void setColor(String color) {
+    public void setPlantColor(String color) {
         if (color == null || color.isEmpty()){
             throw new IllegalArgumentException("Inavliad input.");
         }
         else{
-            this.color = color;
+            this.plantColor = color;
         }
         
     }

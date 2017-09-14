@@ -3,46 +3,46 @@ package task1;
 
 public class Plant {
     
-    private String stem;
-    private boolean leaves;
-    private String color;
+    private String stemSize;
+    private boolean hasLeaves;
+    private String stemColor;
     
     public void growPlant(){
         System.out.println("Grew 1 inch.");
     }
     
-    public String getStem() {
-        return stem;
+    public String getStemSize() {
+        return stemSize;
     }
 
     public boolean hasLeaves() {
-        return leaves;
+        return hasLeaves;
     }
 
-    public String getColor() {
-        return color;
+    public String getStemColor() {
+        return stemColor;
     }
 
-    public void setStem(String stem) {
+    public void setStemSize(String stem) {
         if (stem == null || stem.isEmpty()){
             throw new IllegalArgumentException("Invalid input.");
         }
         else{
-            this.stem = stem;
+            this.stemSize = stem;
         }
         
     }
 
     public void setHasLeaves(boolean leaves) {
-        leaves = true;
+        this.hasLeaves = hasLeaves;
     }
 
-    public void setColor(String color) {
+    public void setStemColor(String color) {
         if (color == null || color.isEmpty()){
             throw new IllegalArgumentException("Inavliad input.");
         }
         else{
-            this.color = color;
+            this.stemColor = color;
         }
         
     }
