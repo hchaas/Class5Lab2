@@ -5,10 +5,15 @@ public class Tulip implements Flower {
     private String stemSize;
     private boolean hasLeaves;
     private String stemColor;
-
+    private SimpleReportService output;
+    
+    public Tulip(){
+        output = new SimpleReportService();
+    }
     @Override
     public void growPlant() {
-        System.out.println("Tuplip grew 4 inches.");
+        String msg = "Tuplip grew 4 inches.";
+        this.output.simpleOutput(msg);
     }
 
     @Override
