@@ -6,9 +6,15 @@ public class Plant {
     private String stemSize;
     private boolean hasLeaves;
     private String stemColor;
+    private SimpleReportService output;
+    
+    public Plant(){
+        output = new SimpleReportService();
+    }
     
     public void growPlant(){
-        System.out.println("Grew 1 inch.");
+        String msg = "Grew 1 inch.";
+        this.output.simpleOutput(msg);
     }
     
     public String getStemSize() {
@@ -39,7 +45,7 @@ public class Plant {
 
     public void setStemColor(String color) {
         if (color == null || color.isEmpty()){
-            throw new IllegalArgumentException("Inavliad input.");
+            throw new IllegalArgumentException("Invliad input.");
         }
         else{
             this.stemColor = color;
