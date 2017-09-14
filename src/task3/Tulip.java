@@ -2,9 +2,9 @@ package task3;
 
 public class Tulip implements Flower {
 
-    private String stem;
-    private boolean leaves;
-    private String color;
+    private String stemSize;
+    private boolean hasLeaves;
+    private String stemColor;
 
     @Override
     public void growPlant() {
@@ -12,26 +12,26 @@ public class Tulip implements Flower {
     }
 
     @Override
-    public String getStem() {
-        return stem;
+    public String getStemSize() {
+        return stemSize;
     }
 
     @Override
-    public boolean hasLeaves() {
-        return leaves;
+    public boolean getHasLeaves() {
+        return hasLeaves;
     }
 
     @Override
-    public String getColor() {
-        return color;
+    public String getStemColor() {
+        return stemColor;
     }
 
     @Override
-    public void setStem(String stem) {
+    public void setStemSize(String stem) {
         if (stem == null || stem.isEmpty()) {
             throw new IllegalArgumentException("Invalid input.");
         } else {
-            this.stem = stem;
+            this.stemSize = stem;
         }
     }
 
@@ -41,11 +41,11 @@ public class Tulip implements Flower {
     }
 
     @Override
-    public void setColor(String color) {
+    public void setStemColor(String color) {
         if (color == null || color.isEmpty()) {
             throw new IllegalArgumentException("Inavliad input.");
         } else {
-            this.color = color;
+            this.stemColor = color;
         }
     }
 
