@@ -2,44 +2,44 @@
 package task2;
 
 public abstract class Plant {
-    private String stemWidth;
+    private String stemSize;
     private boolean hasLeaves;
-    private String plantColor;
+    private String stemColor;
     
     public abstract void growPlant();
     
-    public String getStemWidth() {
-        return stemWidth;
+    public String getStemSize() {
+        return stemSize;
     }
 
     public boolean hasLeaves() {
         return hasLeaves;
     }
 
-    public String getPlantColor() {
-        return plantColor;
+    public String getStemColor() {
+        return stemColor;
     }
 
-    public void setStemWidth(String stem) {
+    public void setStemSize(String stem) {
         if (stem == null || stem.isEmpty()){
             throw new IllegalArgumentException("Invalid input.");
         }
         else{
-            this.stemWidth = stem;
+            this.stemSize = stem;
         }
         
     }
 
     public void setHasLeaves(boolean leaves) {
-        leaves = true;
+        this.hasLeaves = hasLeaves;
     }
 
-    public void setPlantColor(String color) {
+    public void setStemColor(String color) {
         if (color == null || color.isEmpty()){
             throw new IllegalArgumentException("Inavliad input.");
         }
         else{
-            this.plantColor = color;
+            this.stemColor = color;
         }
         
     }
